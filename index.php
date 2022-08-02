@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 require_once "./public/config.php";
 require_once "./vendor/loader.php";
 
@@ -22,3 +23,14 @@ use Vendor\Helper;
 echo Helper::isValid('1234','$2y$10$sgFRIUWyPQHzoq.mjp2b5erM0EiMUV9MPjzAWz7N9qpUqvqKuEtkO');
 //$p = new ProductController();
 //echo "hello world";
+=======
+require_once "./vendor/config.php";
+require_once "./vendor/loader.php";
+require_once "./vendor/global.php";
+
+use Vendor\Auth;
+use Vendor\Kernel;
+Auth::start();
+$kernel = new Kernel;
+$kernel->boot();
+>>>>>>> 631dda2 (Second Commit)
